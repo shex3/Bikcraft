@@ -1,0 +1,302 @@
+/* PAGINA PRINCIPAL */
+.home{
+    display:grid;
+    grid-template-rows: auto auto;
+}
+
+.introducao{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap:2.5rem;
+    position:relative;
+}
+.introducao::after{
+    content: url(../img/dec/bottom-left.svg);
+    position:absolute;
+    bottom:2rem;
+    left:-28%
+}
+.img{
+    position:absolute;
+    width:50%;
+    height:95%;
+    right:0;
+}
+.img img{
+    display:flex;
+    width:100%;
+    height:auto;
+    border-radius:5px;
+}
+.home-tit{
+    padding:7rem 0
+}
+.home-tit a{
+    background:rgb(240, 184, 44);
+}
+.home-tit a:hover{
+    background: rgb(255, 169, 40);
+}
+
+.escolha{
+    margin:12rem 0
+}
+
+.opcoes{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:3rem;
+    margin:3rem 12%
+}
+.opcao a{
+    text-decoration: none;
+    color:black;
+}
+.opcao img{
+    border-radius:5px;
+}
+.opcao span, .opcao p{
+    margin: 0.5rem 1.2rem;
+    display:block
+}
+.opcao p{
+    font-size:2rem;
+    font-weight: bold;
+    position:relative;  
+    transition:0.5s ease;
+}
+.opcao p::before{
+    content:'';
+    width:0.7rem;
+    height:0.5rem;
+    background:goldenrod;
+    position:absolute;
+    top:40%;
+    left:-1rem;
+    transition:0.5s ease;
+}
+.opcao:hover.opcao p::before{
+    width:1.5rem;
+    left:-1.8rem
+}
+.opcao:hover.opcao p{
+    margin-left:2rem;
+}
+
+.tecno{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    position:relative;
+    gap:8rem
+}
+.img-tecno{
+    position:absolute;
+    width:50%;
+    height:100%;
+    right:0;
+    top:-10%
+}
+.img-tecno img{
+    display:flex;
+    width:100%;
+    height:120%;
+    border-radius:5px;
+}
+.tecno article{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:1rem
+}
+.tecno-info{
+    margin-bottom:2rem;
+    margin-top:4rem;
+}
+.tecno-info h2{
+    margin-top:0.5rem
+}
+.tecno-info a{
+    text-decoration:none;
+    color:goldenrod;
+    font-size:1.5rem;
+    border-bottom:4px solid goldenrod;
+}
+.tecno-info a:hover{
+    text-decoration:none;
+    color: white;
+    font-size:1.5rem;
+    border-bottom:4px solid white;
+}
+
+.tecno-info article p{
+    font-size:1rem;
+    margin:0.1rem
+}
+.tecno-info article h3{
+    font-size:1.2rem;
+    color:white;
+    font-weight: bold;
+    margin:0.5rem 0
+}
+.tecno-info article img{
+    width:1.5rem
+}
+.parceiros{
+    margin:8rem 0
+}
+.empresas{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin:3rem 12%;
+}
+.empresas img{
+    padding:3rem 6rem;
+    width:12rem;
+    height:3rem
+}
+
+.reflexao{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 0;                                                                                       
+}
+.reflexao img{
+    object-fit:cover;
+    height:500px;
+    width:100%
+}
+
+.reflexao div{
+    background:rgb(243, 183, 33);
+}
+.reflexao p{
+    font-style: italic;
+    font-size: 2rem;
+    width:50%;
+    margin:2rem 4rem;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    margin-top:10rem;
+    color:rgb(53, 38, 0);
+    position:relative
+}
+.reflexao span{
+    margin:0 4rem;
+    font-weight: bold;
+    color: #583f1d;
+    font-size:1.2rem
+}
+.reflexao p::before{
+    content: '"';
+    font-family:"Merriweather", serif;
+    font-size:4rem;
+    position:absolute;
+    left:-2.5rem;
+    top:-0.8rem;
+    color:rgb(214, 159, 19)
+}
+.reflexao p::after{
+    content: '"';
+    font-family: "Merriweather", serif;
+    font-size:4rem;
+    position:absolute;
+    left:4.5rem;
+    bottom:-2.0rem;
+    color:rgb(214, 159, 19)
+}
+.seguros-home{
+    padding-bottom:4rem;
+}
+.seguros-home h2{
+    margin-top: 0;
+    padding-top:3rem;
+}
+.seguros-opcoes-home{
+    display:grid;
+    grid-template-columns:auto auto;
+    gap:2rem;
+    place-items: center;
+}
+
+.prata-home{
+    width:auto;
+    height:auto;
+    display:grid;
+    grid-template-columns: auto auto;
+    border-radius:5px;
+}
+.prata-home div{
+    margin:3rem 4rem;
+}
+.prata-home .check a{
+    display: inline-block;
+    margin-top:1rem;
+    padding:1rem 1.5rem;
+    border-radius:5px;
+    background:#a7a7a7;
+    color:white;
+    text-decoration: none;
+    font-weight: 500;
+}
+.prata-home .check a:hover{
+    background: #8b8b8b;
+}
+.preco-home{
+    place-self: start end;
+}
+.preco-home p{
+    margin-bottom:0
+}
+.preco-home span{
+    font-size:0.8rem
+}
+.check p{
+    font-size:1.2rem
+}
+.ouro-home{
+    width:auto;
+    height:auto;
+    display:grid;
+    grid-template-columns: auto auto;
+    border-radius:5px;
+    margin-bottom:0
+}
+.ouro-home div{
+    margin:3rem 4rem;
+}
+.preco-home{
+    align-items: end;
+}
+.preco-home p{
+    margin-bottom:0;
+    margin-top:0;
+    font-size:1.7rem
+}
+.preco-home span{
+    font-size:0.8rem
+}
+.check p{
+    font-size:1.2rem;
+    position:relative;
+}
+.check p::before{
+    content: url(../img/icones/lista.svg);
+    position:absolute;
+    left:-1.3rem
+}
+.check{
+    margin-top:1rem !important;
+}
+.ouro-home .check a{
+    display: inline-block;
+    margin-top:1rem;
+    padding:1rem 2rem;
+    border-radius:5px;
+    background:rgb(240, 184, 44);
+    color:black;
+    text-decoration: none;
+    font-weight: 500;
+}
+.ouro-home .check a:hover{
+    background: rgb(255, 169, 40);
+}

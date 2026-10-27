@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding:0
+}
+.seguros-home{
+    padding-bottom:4rem;
+}
+.seguros-home h2{
+    margin-top: 0;
+    padding-top:3rem;
+}
+.seguros-opcoes-home{
+    display:grid;
+    grid-template-columns:auto auto;
+    gap:2rem;
+    place-items: center;
+}
+
+.prata-home{
+    width:auto;
+    height:auto;
+    display:grid;
+    grid-template-columns: auto auto;
+    border-radius:5px;
+}
+.prata-home div{
+    margin:3rem 4rem;
+}
+.prata-home .check a{
+    display: inline-block;
+    margin-top:1rem;
+    padding:1rem 1.5rem;
+    border-radius:5px;
+    background:#a7a7a7;
+    color:white;
+    text-decoration: none;
+    font-weight: 500;
+}
+.prata-home .check a:hover{
+    background: #8b8b8b;
+}
+.preco-home{
+    place-self: start end;
+}
+.preco-home p{
+    margin-bottom:1rem;
+}
+.preco-home span{
+    font-size:0.8rem
+}
+.check p{
+    font-size:1.2rem;
+    margin:1rem
+}
+.ouro-home{
+    width:auto;
+    height:auto;
+    display:grid;
+    grid-template-columns: auto auto;
+    border-radius:5px;
+    margin-bottom:0
+}
+.ouro-home div{
+    margin:3rem 4rem;
+}
+.preco-home{
+    align-items: end;
+}
+.preco-home p{
+    margin-bottom:0;
+    margin-top:0;
+    font-size:1.7rem;
+}
+.preco-home span{
+    font-size:0.8rem
+}
+.check p{
+    font-size:1.2rem;
+    position:relative;
+}
+.check p::before{
+    content: url(../img/icones/lista.svg);
+    position:absolute;
+    left:-1.3rem
+}
+.check{
+    margin-top:1rem !important;
+}
+.ouro-home .check a{
+    display: inline-block;
+    margin-top:1rem;
+    padding:1rem 2rem;
+    border-radius:5px;
+    background:rgb(240, 184, 44);
+    color:black;
+    text-decoration: none;
+    font-weight: 500;
+}
+.ouro-home .check a:hover{
+    background: rgb(255, 169, 40);
+}
+
+.texto1{
+    padding-top:4rem;
+    margin-bottom:0
+}
+.tit-branco{
+    padding-top:0 !important;
+    margin-bottom:3rem;
+}
+.vantagens{
+        padding:6rem 0;
+}
+.vantagens-content{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap:4rem 
+}
+.vantagens-content p{
+    font-size:1rem;
+    color:#a7a7a7;
+}
+.texto2{
+    font-weight: 200;
+    margin:0.5rem 0;
+}
+
+.perguntas{
+    padding:6rem 0;
+}
+
+.pergunta{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    padding:1rem 2rem;
+    gap:1rem;
+
+}
+.pergunta:hover img{
+    transform:rotate(180deg);
+}
+
+.pergunta img{
+    place-self: center end;
+    transition:0.6s ease;
+}
+.pergunta p{
+    font-size: 1rem;
+    color:#575656
+}
+.tit-preto{
+    margin-bottom:4rem
+}

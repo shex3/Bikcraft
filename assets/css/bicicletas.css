@@ -1,0 +1,135 @@
+* {
+    margin:0;
+    padding:0
+}
+.titulo{
+    padding:4rem 0;
+    position: relative;
+}
+
+.bg-opcoes-preto{
+    background-image:linear-gradient(90deg ,#fff 30%, #111 10%)
+}
+
+.opcao{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:2rem;
+    padding:2rem 0;
+    position: relative;
+}
+.margem-home::after{
+    content:url(../img/dec/top-right.svg);
+    position:absolute;
+    top:2rem;
+    right:2rem;
+}
+header.margem-home::after{
+    display:none
+}
+.margem-footer::after{
+    display:none
+}
+.footer-direitos::after{
+    display:none;
+}
+.infos{
+    margin:0;
+    display:grid;
+    grid-template-rows: auto auto 1fr;
+    place-items:center start;
+}
+.h3-branco{
+    font-size: 2rem;
+    font-weight: bold;
+    color:white;
+    margin-top:1rem;
+    position:relative;
+}
+.h3-preto{
+    font-size: 2rem;
+    font-weight: bold;
+    color:black;
+    margin-top:1rem;
+    position:relative;
+}
+.h3-preto::before,.h3-branco::before{
+    content:'';
+    width:12px;
+    height:8px;
+    background:goldenrod;
+    position:absolute;
+    left:0;
+    top:-1rem;
+}
+.infos p{
+    margin-top:1rem
+}
+.infos ul{
+    list-style: none;
+}
+.infos div{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.infos div a{
+    place-self: end;
+    position:absolute;
+    right:0;
+    padding:1rem 1rem;
+    padding-left:2rem;
+    width:10rem;
+    background:rgb(240, 184, 44);
+}
+.infos div a img{
+    margin-left:1rem;
+    align-self: center;
+    transition: 0.5s ease;
+}
+.infos div a:hover{
+    background: rgb(255, 169, 40);
+}
+.infos div a:hover img{
+    margin-left:1.5rem
+}
+.texto-preto{
+    color:#b2b2b2
+}
+.check-preto{
+    font-size:1.2rem;
+    color:#b2b2b2;
+    padding:0.5rem;
+    margin:0.5rem 0;
+}
+.texto-branco{
+    color:#595959
+}
+.check-branco{
+    font-size:1.2rem;
+    color:#595959;
+    padding:0.5rem 0;
+    margin:0.5rem 0
+}
+.check-branco img, .check-preto img{
+    width:1.4rem;
+    place-self: center;
+    margin-right:8px
+}
+.img{
+    position:relative;
+    border-radius:5px;
+}
+.img img{
+    border-radius:5px;
+}
+.img p{
+    position:absolute;
+    background:black;
+    padding:0.8rem 0.5rem;
+    top:2rem;
+    right:0;
+    color:white;
+    font-weight: 400;
+    border-radius:5px 0 0 5px;
+    font-size:1.2rem
+}
