@@ -170,7 +170,13 @@
     gap:2rem;
 }
 .reflexao-margem{
-    box-shadow: inset 0 120px white, inset 0 -120px black;
+    /* box-shadow: inset 0 120px white, inset 0 -120px black;*/
+    background: linear-gradient(
+    to bottom,
+    white 0% 10%,
+    #111111 10% 90%,
+    black 90% 100%
+  );
 }
 .reflexao h2{
     font-size:4rem;
