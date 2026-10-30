@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento | Bikcraft</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/orcamento.css">
+</head>
+
+<body>
+    <div class="home preto">
+        <header class="margem-home">
+            <a href="index.html"><img src="assets/img/bikcraft.svg" alt="Logo da Bikcraft"></a>
+            <nav>
+                <a href="bicicletas.html" class="navegacao1">Bicicletas</a>
+                <a href="seguros.html" class="navegacao1">Seguros</a>
+                <a href="contato.html" class="navegacao1">Contato</a>
+            </nav>
+        </header>
+    </div>
+
+    <section class="titulo cinza">
+        <div class="margem-home">
+            <p class="texto1 maiusculo">Cotações no seu email</p>
+            <h1 class="tit-branco">solicite um orçamento<span class="dot">.</span></h1>
+        </div>
+    </section>
+
+    <section class="bg-orcamento">
+        <div class=" margem-home orcamento">
+            <div class="escolha">
+                <form action="" class="opcao">
+                    <h2 class="maiusculo">Bikcraft ou Seguro?</h2>
+                    <div for="bikcraft" class="grid-opcoes">
+                        <div class="fundo">
+                            <input type="radio" name="opcao" id="bikcraft">
+                            <label for="bikcraft">Bikcraft</label>
+                        </div>
+                        <div class="fundo">
+                            <input type="radio" name="opcao" id="seguro">
+                            <label for="seguro">Seguro</label>
+                        </div>
+                    </div>
+                </form>
+                <div>
+                    <form action="" class="item">
+                        <h2 class="maiusculo">escolha a sua</h2>
+                        <div class="fundo">
+                            <input type="radio" name="item" id="nimbus">
+                            <label for="nimbus">Nimbus Stark</label>
+                        </div>
+                        <div id="exemplo1" class="exemplo-nim">
+                            <div class="exemplo1">
+                                <ul>
+                                <li><img src="assets/img/icones/eletrica.svg" alt=" Bicicleta amarela ">Motor Elétrico</li>
+                                <li><img src="assets/img/icones/carbono.svg" alt="Ondas amarelas">Fibra de Carbono</li>
+                                <li><img src="assets/img/icones/velocidade.svg" alt="Velocímetro amarelo">50 km/h</li>
+                                <li><img src="assets/img/icones/rastreador.svg" alt="Alvo/Target amarelo">Rastreador</li>
+                                </ul>
+                            </div>
+                            <img src="assets/img/bicicletas/nimbus.jpg" alt="Bicicleta preta" class="bike">
+                        </div>
+                        <div class="fundo">
+                            <input type="radio" name="item" id="magic">
+                            <label for="magic">Magic Might</label>
+                        </div>
+                        <div id="exemplo2">
+                            <div class="exemplo1">
+                                <ul>
+                                <li><img src="assets/img/icones/eletrica.svg" alt=" Bicicleta amarela ">Motor Elétrico</li>
+                                <li><img src="assets/img/icones/carbono.svg" alt="Ondas amarelas">Fibra de Carbono</li>
+                                <li><img src="assets/img/icones/velocidade.svg" alt="Velocímetro amarelo">50 km/h</li>
+                                <li><img src="assets/img/icones/rastreador.svg" alt="Alvo/Target amarelo">Rastreador</li>
+                                </ul>
+                            </div>
+                            <img src="assets/img/bicicletas/magic.jpg" alt="Bicicleta preta" class="bike">
+                        </div>
+                        <div class="fundo">
+                            <input type="radio" name="item" id="nebula">
+                            <label for="nebula">Nebula Cosmic</label>
+                        </div>
+                        <div id="exemplo3">
+                            <div class="exemplo1">
+                                <ul>
+                                <li><img src="assets/img/icones/eletrica.svg" alt=" Bicicleta amarela ">Motor Elétrico</li>
+                                <li><img src="assets/img/icones/carbono.svg" alt="Ondas amarelas">Fibra de Carbono</li>
+                                <li><img src="assets/img/icones/velocidade.svg" alt="Velocímetro amarelo">50 km/h</li>
+                                <li><img src="assets/img/icones/rastreador.svg" alt="Alvo/Target amarelo">Rastreador</li>
+                                </ul>
+                            </div>
+                            <img src="assets/img/bicicletas/nebula.jpg" alt="Bicicleta preta" class="bike">
+                        </div>
+                    </form>
+                </div>
+                <div class="grid-seguro">
+                    <form action="" class="item2">
+                        <h2 class="maiusculo">escolha o plano</h2>
+                        <div class="fundo2">
+                            <input type="radio" name="item2" id="prata">
+                            <label for="prata">Prata</label>
+                        </div>
+                        <div class="fundo2">
+                            <input type="radio" name="item2" id="ouro">
+                            <label for="ouro">Ouro</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="dados">
+                <form action="">
+                    <h2 class="maiusculo">dados pessoais</h2>
+                    <div class="pessoal">
+                        <label for="#nome">Nome</label>
+                        <input type="text" id="nome">
+
+                        <label for="#sobremome">Sobrenome</label>
+                        <input type="text" id="sobrenome">
+                    </div>
+
+                    <div class="block">
+                        <label for="#cpf">CPF</label>
+                        <input type="text" placeholder="000.000.000-00" id="cpf">
+
+                        <label for="#email ">Mensagem</label>
+                        <input type="email" id="email">
+                    </div>
+                    <h2 class="maiusculo">entrega</h2>
+                    <div class="local">
+                        <label for="#cep">CEP</label>
+                        <input type="number" id="cep">
+
+                        <label for="#numero">Número</label>
+                        <input type="number" id="numero">
+                    </div>
+                    <div class="local">
+                        <label for="#bairro">Logradouro</label>
+                        <input type="text" id="nome">
+
+                        <label for="#bairro">Bairro</label>
+                        <input type="text" id="bairro">
+                    </div>
+                    <div class="local">
+                        <label for="#cidade">Cidade</label>
+                        <input type="text" id="cidade">
+
+                        <label for="#estado">Estado</label>
+                        <input type="text" id="estado">
+                    </div>
+
+                    <button type="submit" class="maiusculo botao">enviar mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="preto">
+        <div class="margem-home margem-footer footer-div">
+            <img src="assets/img/bikcraft.svg" alt="Logo da Bikcraft">
+            <div class="contato">
+                <h3 class="maiusculo">contato</h3>
+                <a href="tel:+55 21 9999-9999">+55 21 9999-9999</a>
+                <a href="mailto:contato@bikcraft.com">contato@bikcraft.com</a>
+                <hr>
+                <p>Rua Ali Perto, 42 - Botafogo</p>
+                <p>Rio de Janeiro - RJ</p>
+                <hr>
+                <div>
+                    <img src="assets/img/redes/instagram.svg" alt="Logo do Instagram">
+                    <img src="assets/img/redes/facebook.svg" alt="Logo do Facebook">
+                    <img src="assets/img/redes/youtube.svg" alt="Logo do Youtube">
+                </div>
+            </div>
+            <div class="footer-infos">
+                <h3 class="maiusculo">informações</h3>
+                <a href="bicicletas.html">Bicicletas</a>
+                <a href="seguros.html">Seguros</a>
+                <a href="contato.html">Contato</a>
+                <a href="termos.html">Termos e Condições</a>
+            </div>
+        </div>
+        <span class="margem-home footer-direitos">Bikcraft © Alguns direitos reservados</span>
+    </footer>
+</body>
+
+</html>

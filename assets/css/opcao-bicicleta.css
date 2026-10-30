@@ -36,7 +36,7 @@
     padding:1.5rem;
 }
 .link a:hover{
-    background: rgb(255, 169, 40);;
+    background: rgb(255, 169, 40);
 }
 .link{
     display:grid;
@@ -52,6 +52,7 @@
     padding:0.5rem;
     font-size:0.7rem;
     display:inline-block;
+    align-items: center;
 }
 .link span img{
     margin:0 0.5rem;

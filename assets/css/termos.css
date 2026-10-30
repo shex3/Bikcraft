@@ -1,0 +1,35 @@
+* {
+    margin:0;
+    padding:0;
+}
+.titulo{
+    padding:4rem 0
+}
+.padding-top{
+    padding-top:4rem;
+}
+.padding-bottom{
+    padding-bottom:4rem;
+}
+.termos{
+    width:65%;
+    margin-left:7%
+}              
+.termos h2, .termos p{
+    padding:1rem 0;
+    line-height: 1.5rem;
+}   
+.termos h2{
+    color:#111111
+}                   
+.termos p{
+    color:#2e2e2e;
+}                  
+.d02, .d03{
+    padding-top:1.5rem;
+}     
+.opcao input{
+    background:#2e2e2e;
+    padding:2rem
+}     
+                                  
