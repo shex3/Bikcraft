@@ -139,6 +139,22 @@ button:hover{
 .fundo:has(:checked) label, .fundo2:has(:checked) label{
     color:black;
 }
+.fundo label span{
+    display:none;
+    color:#111;
+    place-self:center end
+}
+.fundo:has(:checked) label span{
+    display:flex;   
+}
+.fundo2 label span{
+    display:none;
+    color:#111;
+    place-self:center end
+}
+.fundo2:has(:checked) label span{
+    display:flex
+}
 .item, .item2{
     border-radius:5px;
     color:#b2b2b2;
@@ -192,5 +208,15 @@ button:hover{
 #exemplo1 div img, #exemplo2 div img, #exemplo3 div img{
     width:1rem;
     margin:0 0.5rem;
+}
+
+@media (max-width:768px){
+    .orcamento{
+        grid-template-columns: 1fr;
+        margin:0 6rem
+    }
+    .escolha{
+        padding-bottom:6rem
+    }
 }
 

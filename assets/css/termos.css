@@ -32,4 +32,21 @@
     background:#2e2e2e;
     padding:2rem
 }     
+.titulo{
+    position: relative;
+}
+.titulo div::after{
+    content: url(../img/dec/top-right.svg);
+    position:absolute;
+    right:0;
+    top:0
+
+}
+
+@media (max-width:768px){
+    .termos{
+        width:100%;
+        margin:0 1rem
+    }
+}
                                   

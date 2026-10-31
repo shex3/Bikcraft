@@ -9,6 +9,15 @@
     font-size:1.5rem;
     color:#a7a7a7
 }
+.titulo::after{
+    content: url(../img/dec/top-right.svg);
+    position:absolute;
+    top:2rem;
+    right:2rem;
+}
+.titulo{
+    position:relative
+}
 .bg-contato{
     background:linear-gradient(
         #111 0% 50%,
@@ -34,7 +43,7 @@
     content: url(../img/dec/bottom-left.svg);
     position:absolute;
     left:1.5rem;
-    bottom:1rem;
+    bottom:-4rem;
 }
 .endereco{
     margin-top:4rem;
@@ -89,7 +98,14 @@
     margin-right:2rem;
 }
 .form {
-    background:white
+    background:white;
+    position:relative
+}
+.form::after{
+    content: url(../img/dec/bottom-right.svg);
+    position: absolute;
+    right:1rem;
+    bottom:1rem
 }
 form {
     display:flex;
@@ -180,4 +196,17 @@ button:hover{
 }
 .fundo input{
     display:none
+}
+@media (max-width:768px){
+    .infos{
+        grid-template-columns: 1fr;
+        margin:0 3rem
+    }
+    .grid{
+        grid-template-columns: 1fr;
+    }
+    .titulo::after{
+        top:-1rem;
+        right:-2rem
+    }
 }

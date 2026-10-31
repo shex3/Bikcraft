@@ -248,7 +248,10 @@
     margin-bottom:0
 }
 .preco-home span{
-    font-size:0.8rem
+    font-size:0.8rem;
+    position:absolute;
+    top:-2rem;
+    right:0
 }
 .check p{
     font-size:1.2rem
@@ -299,4 +302,59 @@
 }
 .ouro-home .check a:hover{
     background: rgb(255, 169, 40);
+}
+
+@media (max-width:768px){
+    .introducao{
+        padding-top:0;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto; 
+    }
+    .introducao .img img{
+        display:none;
+    }
+    .opcoes{
+        grid-template-columns: 1fr;
+    }
+    .img-tecno{
+        display:none
+    }
+    .empresas{
+        grid-template-columns: 1fr 1fr;
+    }
+    .empresas img{
+        border:none;
+        place-self:center;
+    }
+    .reflexao{
+        grid-template-columns: 1fr;
+    }
+    .reflexao div{
+        padding-bottom:4rem
+    }
+    .reflexao div p{
+        margin:2rem auto
+    }
+    .reflexao div span{
+        margin: 25%;
+        display:inline
+    }
+    .seguros-opcoes-home{
+        grid-template-columns: 1fr;
+    }
+    .check a{
+        width:90%
+    }
+    .preco-home{
+        position: relative;
+    }
+    .preco-home span{
+        top:2rem
+    }
+    .prata-home{
+        width:110%
+    }
+    .ouro-home{
+        width:130%
+    }
 }

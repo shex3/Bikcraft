@@ -16,6 +16,16 @@
     place-items: center;
 }
 
+.titulo div{
+    position: relative;
+}
+.seguros-home div::after{
+    content: url(../img/dec/top-right.svg);
+    position:absolute;
+    top:4rem;
+    right:2rem;
+    opacity:0.2
+}
 .prata-home{
     width:auto;
     height:auto;
@@ -41,12 +51,16 @@
 }
 .preco-home{
     place-self: start end;
+    position:relative
 }
 .preco-home p{
     margin-bottom:1rem;
 }
 .preco-home span{
-    font-size:0.8rem
+    font-size:0.8rem;
+    position:absolute;
+    top:-2rem;
+    right:0
 }
 .check p{
     font-size:1.2rem;
@@ -151,4 +165,16 @@
 }
 .tit-preto{
     margin-bottom:4rem
+}
+
+@media (max-width:768px){
+    .seguros-opcoes-home{
+        grid-template-columns: 1fr;
+    }
+    .prata-home{
+        width:110%
+    }
+    .ouro-home{
+        width:130%
+    }
 }
