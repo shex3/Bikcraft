@@ -30,22 +30,29 @@ header nav a{
 }
 header nav a::after{
     content:'';
-    width:0;
     height:2px;
     background:black;
     position:absolute;
     left:0;
     bottom:-0.1rem;
-    transition: 0.7s ease-in-out;
 }
 header nav a:hover::after{
     content:'';
-    width:100%;
     height:2px;
     background:white;
     position:absolute;
     left:0;
-    bottom:-0.1rem
+    bottom:-0.1rem;
+    animation:sublinhado 0.5s both;
+}
+
+@keyframes sublinhado{
+    to{
+        width:100%
+    }
+    from{
+        width:0%
+    }
 }
 
 footer{
@@ -168,6 +175,15 @@ footer h3{
 }
 .direita{
     border-right:1px solid #d1cfcf
+}
+.ativo::after{
+    content:'';
+    width:100%;
+    height:2px;
+    background:white;
+    position:absolute;
+    left:0;
+    bottom:-0.1rem;
 }
 
 @media (max-width:768px){
