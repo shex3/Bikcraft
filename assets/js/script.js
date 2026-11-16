@@ -21,3 +21,19 @@ function autoCheck(parametro){
 }
 parametros.forEach(autoCheck)
 
+
+const perguntas = document.querySelectorAll('.pergunta button');
+
+function click(pergunta){
+    pergunta.addEventListener('click', ativarPergunta)  
+};
+perguntas.forEach(click);
+
+function ativarPergunta(event){
+    const pergunta = event.currentTarget;
+    const controls = pergunta.getAttribute("aria-controls");
+    const resposta = document.getElementById(controls)
+
+    pergunta.setAttribute('aria-expanded', 'true')
+    resposta.classList.toggle('ativa')
+};

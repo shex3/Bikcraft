@@ -151,8 +151,30 @@
     gap:1rem;
 
 }
-.pergunta:hover img{
+.pergunta button {
+    font-size:1.3rem;
+    border:none;
+    background:transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+.pergunta button::before {
+    content:'';
+    width:10px;
+    height:8px;
+    position:absolute;
+    top:8px;
+    left:-16px;
+    background:goldenrod;
+}
+.pergunta h3:hover ~ img, .perguntas h3:has(button[aria-expanded="true"]) ~img{
     transform:rotate(180deg);
+}
+.pergunta p.ativa{
+    display:block;
+}
+.pergunta p{
+    display:none;
 }
 
 .pergunta img{
