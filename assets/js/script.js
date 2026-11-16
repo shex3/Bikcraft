@@ -1,3 +1,4 @@
+//Menu Ativo
 const links = document.querySelectorAll('header nav a')
 
 function ativarLink(link){
@@ -10,3 +11,13 @@ function ativarLink(link){
 }
 
 links.forEach(ativarLink)
+
+// URL auto-check
+const parametros = new URLSearchParams(location.search);
+
+function autoCheck(parametro){
+    const elemento = document.getElementById(parametro)
+    elemento.checked = true
+}
+parametros.forEach(autoCheck)
+
